@@ -32,12 +32,12 @@ app.use((req,res,next)=>{
 });
 
 
-app.use((req,res,next)=>{
+/* app.use((req,res,next)=>{
 
 	res.render('maintenance.hbs');
 
 });
-
+ */
 app.use(express.static(__dirname+'/public'));
 
 hbs.registerHelper('getCurrentYear',()=>{
